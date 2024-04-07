@@ -1,0 +1,18 @@
+name: First
+on:
+  push:
+   branches:
+   - main
+
+jobs:
+  test:
+    runs-on: Ubuntu-latest
+    steps:
+    - name: testing something
+      run: echo hello test
+  
+  deploy:
+    runs-on: Ubuntu-latest
+    steps:
+    - name: deploying something
+      run: echo hello deploy    
