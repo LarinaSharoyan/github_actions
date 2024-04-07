@@ -13,6 +13,7 @@ jobs:
   
   deploy:
     runs-on: Ubuntu-latest
+    needs: [test]
     steps:
     - name: deploying something
       run: echo hello deploy    
